@@ -423,7 +423,19 @@ const DATA = [
         type : "instanpayment",
         method : "bca_klikpay",
         icon : bcaklikpay,
-        instructions : []
+        instructions : [
+            {
+                label: "Bayar via klikpay",
+                items: [
+                    "Kamu akan di arahkan ke halaman <strong>BCA klikpay</strong> saat klik bayar.",
+                    "Setelah login ke akun <strong>BCA klikpay</strong> dengan memasukkan email dan password, akan diperlihatkan informasi transaksi, pilih tipe pemayaran KlikBCA atau BCA Card untuk melanjutkan traksaksi.",
+                    "Untuk memverifikasi pembayaran dengan <strong>BCA KlikPay</strong>, Klik tombol send OTP, setelah OTP didapatkan melalui SMS, masukkan kode OTP kekolom yang sudah disediakan.",
+                    "Jika kode OTP benar. Pembayaran akan segera diproses.",
+                    "Status transaksi akan muncul di layar dan akan dikirim melalui email.", 
+                    "informasi lebih lanjut bisa hubungi  Halo BCA at 1500888 or visit http://klikbca.com/KlikPay/klikpay.html"
+                ]
+            }
+        ]
     },
     {
         id : "bcaklikbca",
