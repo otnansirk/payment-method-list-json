@@ -21,6 +21,7 @@ import cimbclicks from './assets/Cimbclicks.png';
 import danamononline from './assets/Danamononline.png';
 import akulaku from './assets/Akulaku.png';
 import qris from './assets/Qris.png';
+import dana from './assets/Dana.png';
 
 
 const TYPE = [
@@ -39,7 +40,8 @@ const METHOD = [
     "gopay",
     "linkaja",
     "jenius",
-    "kredivo"
+    "kredivo",
+    "dana",
 ]
 
 const DATA = [
@@ -413,6 +415,25 @@ const DATA = [
                     "Scan qrcode yang terlihat di layar.",
                     "Klik bayar.",
                     "Kamu akan mendapatkan notifikasi bahwa pembayaran telah berhasil.",
+                ]
+            }
+        ]
+    },
+    {
+        id : "dana",
+        name : "Dana",
+        type : "ewallet",
+        method : "dana",
+        icon : dana,
+        instructions : [
+            {
+                label: "Bayar via Dana",
+                items: [
+                    "Setelah melakukan chackout pembelian dengan menggunakan pembayaran via <strong>DANA</strong>.",
+                    "Selanjutnya kamu akan diarahkan ke laman konfirmasi nominal transaksi dengan <strong>DANA</strong>.",
+                    "Cek kembali nominal transaksi kamu, lalu jenis untuk membayar.",
+                    "Klik <strong>Bayar</strong> lalu masukkan <strong>PIN DANA</strong> kamu.",
+                    'Transaksi Anda sudah selesai.',
                 ]
             }
         ]
