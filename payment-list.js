@@ -22,6 +22,7 @@ import danamononline from './assets/Danamononline.png';
 import akulaku from './assets/Akulaku.png';
 import qris from './assets/Qris.png';
 import dana from './assets/Dana.png';
+import ovo from './assets/Ovo.png';
 
 
 const TYPE = [
@@ -42,6 +43,7 @@ const METHOD = [
     "jenius",
     "kredivo",
     "dana",
+    "ovo",
 ]
 
 const DATA = [
@@ -421,18 +423,37 @@ const DATA = [
     },
     {
         id : "dana",
-        name : "Dana",
+        name : "DANA",
         type : "ewallet",
         method : "dana",
         icon : dana,
         instructions : [
             {
-                label: "Bayar via Dana",
+                label: "Bayar via DANA",
                 items: [
                     "Setelah melakukan chackout pembelian dengan menggunakan pembayaran via <strong>DANA</strong>.",
                     "Selanjutnya kamu akan diarahkan ke laman konfirmasi nominal transaksi dengan <strong>DANA</strong>.",
                     "Cek kembali nominal transaksi kamu, lalu jenis untuk membayar.",
                     "Klik <strong>Bayar</strong> lalu masukkan <strong>PIN DANA</strong> kamu.",
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
+    },
+    {
+        id : "ovo",
+        name : "OVO",
+        type : "ewallet",
+        method : "ovo",
+        icon : ovo,
+        instructions : [
+            {
+                label: "Bayar via OVO",
+                items: [
+                    "Setelah melakukan chackout pembelian dengan menggunakan pembayaran via <strong>OVO</strong>.",
+                    "Selanjutnya kamu akan diarahkan ke laman konfirmasi nominal transaksi dengan <strong>OVO</strong>.",
+                    "Cek kembali nominal transaksi kamu, lalu pilih <strong>OVO Cash</strong> untuk membayar.",
+                    "Klik <strong>Bayar</strong> lalu masukkan <strong>Security Code OVO</strong> kamu.",
                     'Transaksi Anda sudah selesai.',
                 ]
             }
