@@ -423,7 +423,18 @@ const DATA = [
         type : "instanpayment",
         method : "bca_klikpay",
         icon : bcaklikpay,
-        instructions : []
+        instructions : [
+            {
+                label : "Transfer via BCA Klikpay",
+                items : [
+                    'Pergi ke laman BCA KlikPay. Silakan selesaikan pembayaran melalui BCA KlikPay dalam waktu 1 jam untuk menghindari pembatalan transaksi secara otomatis.\n Login menggunakan account kamu di halaman BCA KlikPay. Setelah kamu berhasil login, detail transaksi akan muncul secara otomatis.',
+                    'Periksa kembali detail transaksi kamu, pilih pembayaran KlikBCA atau BCA Kartu Kredit, bila semuanya telah sesuai klik <strong>Kirim</strong>',
+                    'Periksa kembali detail transaksi kamu sekali lagi, bila semuanya telah sesuai klik KIRIM OTP (One Time Password)',
+                    'Melalui SMS ke nomor handphone kamu, BCA KlikPay akan mengirimkan kode OTP (One Time Password) dan segera masukkan kode OTP (One Time Password) tersebut pada website BCA KlikPay.',
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
     },
     {
         id : "bcaklikbca",
@@ -431,7 +442,20 @@ const DATA = [
         type : "instanpayment",
         method : "bca_klikbca",
         icon : bcaklikbca,
-        instructions : []
+        instructions : [
+            {
+                label : "Transfer via Klik BCA",
+                items : [
+                    'Pergi ke laman Klik BCA. Silakan login menggunakan User ID dan PIN KlikBCA kamu.',
+                    'Pilih Pembayaran <strong>e-Commerce</strong> pada menu utama Klik BCA.', 
+                    'Pilih <strong>Kategori</strong> dan pilihan <strong>Nama Perusahaan</strong>.',
+                    'Pilih nomor rekening BCA kamu, lalu klik <strong>Lanjutkan</strong>.',
+                    'Beri tanda centang pada transaksi yang ingin kamu bayar, lalu klik “Lanjutkan”',
+                    'Masukkan respon keybca appli 1 dan Klik <strong>Kirim</strong>.',
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
     },
     {
         id : "epaybri",
@@ -439,7 +463,20 @@ const DATA = [
         type : "instanpayment",
         method : "bri_epay",
         icon : epaybri,
-        instructions : []
+        instructions : [
+            {
+                label : "Transfer via BRI E-Pay",
+                items : [
+                    'Pergi ke laman BRI E-Pay. Login ke akun BRI E-Pay dengan memasukkan User ID dan Password, lalu klik tombol <strong>Submit</strong>.',
+                    'Pastikan nomor <strong>rekening BRI</strong> yang ingin kamu gunakan sudah benar.',
+                    'Masukkan kembali password akun BRI E-Paymu pada kolom yang tersedia.',
+                    'Masukkan <strong>Paycode</strong> yang dikirimkan ke nomor handphone.',
+                    'Cek kembali <strong>Jumlah Pembayaran</strong> dan pastikan nama penerima sudah benar.',
+                    'Klik <strong>Confirm</strong> untuk melanjutkan.',
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
     },
     {
         id : "cimbclicks",
@@ -447,7 +484,20 @@ const DATA = [
         type : "instanpayment",
         method : "cimb_clicks",
         icon : cimbclicks,
-        instructions : []
+        instructions : [
+            {
+                label : "Transfer via CIMB Clicks",
+                items : [
+                    'Pergi ke laman CIMB clicks dan silakan login.',
+                    'Pilih menu <strong>Bayar Tagihan / Pay Bills</strong>.', 
+                    'Pilih <strong>Rekening Sumber / Source Account</strong> dan Jenis Pembayaran / Payment Type > Virtual Account.',
+                    'Masukkan <strong>Nomor Virtual Account</strong>.',
+                    'Masukkan 6 digit mPIN dan tekan tombol <strong>Submit</strong>.',
+                    'Lakukan konfirmasi pembayaran.',
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
     },
     {
         id : "danamononline",
@@ -455,7 +505,19 @@ const DATA = [
         type : "instanpayment",
         method : "danamon_online",
         icon : danamononline,
-        instructions : []
+        instructions : [
+            {
+                label : "Transfer via Danamon Online Banking",
+                items : [
+                    'Masukkan User ID dan Password Danamon Online Banking Anda', 
+                    'Pilih sumber rekening untuk pembayaran Anda.',
+                    'Cek rincian informasi transaksi Anda.', 
+                    'Masukkan <strong>One Time Pasword (OTP)</strong> yang anda terima melalui SMS, lalu tekan <strong>Lanjut</strong>',
+                    'Lakukan konfirmasi pembayaran.',
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
     },
     {
         id : "akulaku",
@@ -463,7 +525,16 @@ const DATA = [
         type : "cardless",
         method : "akulaku",
         icon : akulaku,
-        instructions : []
+        instructions : [
+            {
+                label : "Transfer via Akulaku",
+                items : [
+                    'Pembeli akan diarahkan ke halaman <strong>Pusat Pembayaran Akulaku</strong>, Pilih tenor cicilan yang diinginkan, lalu <strong>Login</strong> ke akun Akulaku milik pembeli dengan memasukkan nomor handphone dan password.', 
+                    'Masukkan <strong>kode verifikasi (OTP)</strong> yang telah dikirimkan ke nomor handphone pembeli, lalu klik tombol <strong>Selanjutnya</strong>.',
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
     },
     {
         id : "qris",
