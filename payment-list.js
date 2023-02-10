@@ -484,7 +484,20 @@ const DATA = [
         type : "instanpayment",
         method : "cimb_clicks",
         icon : cimbclicks,
-        instructions : []
+        instructions : [
+            {
+                label : "Transfer via CIMB Clicks",
+                items : [
+                    'Pergi ke laman CIMB clicks dan silakan login.',
+                    'Pilih menu <strong>Bayar Tagihan / Pay Bills</strong>.', 
+                    'Pilih <strong>Rekening Sumber / Source Account</strong> dan Jenis Pembayaran / Payment Type > Virtual Account.',
+                    'Masukkan <strong>Nomor Virtual Account</strong>.',
+                    'Masukkan 6 digit mPIN dan tekan tombol <strong>Submit</strong>.',
+                    'Lakukan konfirmasi pembayaran.',
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
     },
     {
         id : "danamononline",
@@ -492,7 +505,19 @@ const DATA = [
         type : "instanpayment",
         method : "danamon_online",
         icon : danamononline,
-        instructions : []
+        instructions : [
+            {
+                label : "Transfer via Danamon Online Banking",
+                items : [
+                    'Masukkan User ID dan Password Danamon Online Banking Anda', 
+                    'Pilih sumber rekening untuk pembayaran Anda.',
+                    'Cek rincian informasi transaksi Anda.', 
+                    'Masukkan <strong>One Time Pasword (OTP)</strong> yang anda terima melalui SMS, lalu tekan <strong>Lanjut</strong>',
+                    'Lakukan konfirmasi pembayaran.',
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
     },
     {
         id : "akulaku",
@@ -500,7 +525,16 @@ const DATA = [
         type : "cardless",
         method : "akulaku",
         icon : akulaku,
-        instructions : []
+        instructions : [
+            {
+                label : "Transfer via Akulaku",
+                items : [
+                    'Pembeli akan diarahkan ke halaman <strong>Pusat Pembayaran Akulaku</strong>, Pilih tenor cicilan yang diinginkan, lalu <strong>Login</strong> ke akun Akulaku milik pembeli dengan memasukkan nomor handphone dan password.', 
+                    'Masukkan <strong>kode verifikasi (OTP)</strong> yang telah dikirimkan ke nomor handphone pembeli, lalu klik tombol <strong>Selanjutnya</strong>.',
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
     },
     {
         id : "qris",
