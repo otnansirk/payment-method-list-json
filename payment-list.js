@@ -467,13 +467,14 @@ const DATA = [
         icon : bcaklikpay,
         instructions : [
             {
-                label : "Transfer via BCA Klikpay",
-                items : [
-                    'Pergi ke laman BCA KlikPay. Silakan selesaikan pembayaran melalui BCA KlikPay dalam waktu 1 jam untuk menghindari pembatalan transaksi secara otomatis.\n Login menggunakan account kamu di halaman BCA KlikPay. Setelah kamu berhasil login, detail transaksi akan muncul secara otomatis.',
-                    'Periksa kembali detail transaksi kamu, pilih pembayaran KlikBCA atau BCA Kartu Kredit, bila semuanya telah sesuai klik <strong>Kirim</strong>',
-                    'Periksa kembali detail transaksi kamu sekali lagi, bila semuanya telah sesuai klik KIRIM OTP (One Time Password)',
-                    'Melalui SMS ke nomor handphone kamu, BCA KlikPay akan mengirimkan kode OTP (One Time Password) dan segera masukkan kode OTP (One Time Password) tersebut pada website BCA KlikPay.',
-                    'Transaksi Anda sudah selesai.',
+                label: "Bayar via klikpay",
+                items: [
+                    "Kamu akan di arahkan ke halaman <strong>BCA klikpay</strong> saat klik bayar.",
+                    "Setelah login ke akun <strong>BCA klikpay</strong> dengan memasukkan email dan password, akan diperlihatkan informasi transaksi, pilih tipe pemayaran KlikBCA atau BCA Card untuk melanjutkan traksaksi.",
+                    "Untuk memverifikasi pembayaran dengan <strong>BCA KlikPay</strong>, Klik tombol send OTP, setelah OTP didapatkan melalui SMS, masukkan kode OTP kekolom yang sudah disediakan.",
+                    "Jika kode OTP benar. Pembayaran akan segera diproses.",
+                    "Status transaksi akan muncul di layar dan akan dikirim melalui email.", 
+                    "informasi lebih lanjut bisa hubungi  Halo BCA at 1500888 or visit http://klikbca.com/KlikPay/klikpay.html"
                 ]
             }
         ]
