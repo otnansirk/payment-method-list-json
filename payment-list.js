@@ -21,6 +21,8 @@ import cimbclicks from './assets/Cimbclicks.png';
 import danamononline from './assets/Danamononline.png';
 import akulaku from './assets/Akulaku.png';
 import qris from './assets/Qris.png';
+import dana from './assets/Dana.png';
+import ovo from './assets/Ovo.png';
 
 
 const TYPE = [
@@ -39,7 +41,9 @@ const METHOD = [
     "gopay",
     "linkaja",
     "jenius",
-    "kredivo"
+    "kredivo",
+    "dana",
+    "ovo",
 ]
 
 const DATA = [
@@ -418,6 +422,44 @@ const DATA = [
         ]
     },
     {
+        id : "dana",
+        name : "DANA",
+        type : "ewallet",
+        method : "dana",
+        icon : dana,
+        instructions : [
+            {
+                label: "Bayar via DANA",
+                items: [
+                    "Setelah melakukan chackout pembelian dengan menggunakan pembayaran via <strong>DANA</strong>.",
+                    "Selanjutnya kamu akan diarahkan ke laman konfirmasi nominal transaksi dengan <strong>DANA</strong>.",
+                    "Cek kembali nominal transaksi kamu, lalu jenis untuk membayar.",
+                    "Klik <strong>Bayar</strong> lalu masukkan <strong>PIN DANA</strong> kamu.",
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
+    },
+    {
+        id : "ovo",
+        name : "OVO",
+        type : "ewallet",
+        method : "ovo",
+        icon : ovo,
+        instructions : [
+            {
+                label: "Bayar via OVO",
+                items: [
+                    "Setelah melakukan chackout pembelian dengan menggunakan pembayaran via <strong>OVO</strong>.",
+                    "Selanjutnya kamu akan diarahkan ke laman konfirmasi nominal transaksi dengan <strong>OVO</strong>.",
+                    "Cek kembali nominal transaksi kamu, lalu pilih <strong>OVO Cash</strong> untuk membayar.",
+                    "Klik <strong>Bayar</strong> lalu masukkan <strong>Security Code OVO</strong> kamu.",
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
+    },
+    {
         id : "bcaklikpay",
         name : "BCA Klikpay",
         type : "instanpayment",
@@ -443,7 +485,20 @@ const DATA = [
         type : "instanpayment",
         method : "bca_klikbca",
         icon : bcaklikbca,
-        instructions : []
+        instructions : [
+            {
+                label : "Transfer via Klik BCA",
+                items : [
+                    'Pergi ke laman Klik BCA. Silakan login menggunakan User ID dan PIN KlikBCA kamu.',
+                    'Pilih Pembayaran <strong>e-Commerce</strong> pada menu utama Klik BCA.', 
+                    'Pilih <strong>Kategori</strong> dan pilihan <strong>Nama Perusahaan</strong>.',
+                    'Pilih nomor rekening BCA kamu, lalu klik <strong>Lanjutkan</strong>.',
+                    'Beri tanda centang pada transaksi yang ingin kamu bayar, lalu klik “Lanjutkan”',
+                    'Masukkan respon keybca appli 1 dan Klik <strong>Kirim</strong>.',
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
     },
     {
         id : "epaybri",
@@ -451,7 +506,20 @@ const DATA = [
         type : "instanpayment",
         method : "bri_epay",
         icon : epaybri,
-        instructions : []
+        instructions : [
+            {
+                label : "Transfer via BRI E-Pay",
+                items : [
+                    'Pergi ke laman BRI E-Pay. Login ke akun BRI E-Pay dengan memasukkan User ID dan Password, lalu klik tombol <strong>Submit</strong>.',
+                    'Pastikan nomor <strong>rekening BRI</strong> yang ingin kamu gunakan sudah benar.',
+                    'Masukkan kembali password akun BRI E-Paymu pada kolom yang tersedia.',
+                    'Masukkan <strong>Paycode</strong> yang dikirimkan ke nomor handphone.',
+                    'Cek kembali <strong>Jumlah Pembayaran</strong> dan pastikan nama penerima sudah benar.',
+                    'Klik <strong>Confirm</strong> untuk melanjutkan.',
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
     },
     {
         id : "cimbclicks",
@@ -459,7 +527,20 @@ const DATA = [
         type : "instanpayment",
         method : "cimb_clicks",
         icon : cimbclicks,
-        instructions : []
+        instructions : [
+            {
+                label : "Transfer via CIMB Clicks",
+                items : [
+                    'Pergi ke laman CIMB clicks dan silakan login.',
+                    'Pilih menu <strong>Bayar Tagihan / Pay Bills</strong>.', 
+                    'Pilih <strong>Rekening Sumber / Source Account</strong> dan Jenis Pembayaran / Payment Type > Virtual Account.',
+                    'Masukkan <strong>Nomor Virtual Account</strong>.',
+                    'Masukkan 6 digit mPIN dan tekan tombol <strong>Submit</strong>.',
+                    'Lakukan konfirmasi pembayaran.',
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
     },
     {
         id : "danamononline",
@@ -467,7 +548,19 @@ const DATA = [
         type : "instanpayment",
         method : "danamon_online",
         icon : danamononline,
-        instructions : []
+        instructions : [
+            {
+                label : "Transfer via Danamon Online Banking",
+                items : [
+                    'Masukkan User ID dan Password Danamon Online Banking Anda', 
+                    'Pilih sumber rekening untuk pembayaran Anda.',
+                    'Cek rincian informasi transaksi Anda.', 
+                    'Masukkan <strong>One Time Pasword (OTP)</strong> yang anda terima melalui SMS, lalu tekan <strong>Lanjut</strong>',
+                    'Lakukan konfirmasi pembayaran.',
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
     },
     {
         id : "akulaku",
@@ -475,7 +568,16 @@ const DATA = [
         type : "cardless",
         method : "akulaku",
         icon : akulaku,
-        instructions : []
+        instructions : [
+            {
+                label : "Transfer via Akulaku",
+                items : [
+                    'Pembeli akan diarahkan ke halaman <strong>Pusat Pembayaran Akulaku</strong>, Pilih tenor cicilan yang diinginkan, lalu <strong>Login</strong> ke akun Akulaku milik pembeli dengan memasukkan nomor handphone dan password.', 
+                    'Masukkan <strong>kode verifikasi (OTP)</strong> yang telah dikirimkan ke nomor handphone pembeli, lalu klik tombol <strong>Selanjutnya</strong>.',
+                    'Transaksi Anda sudah selesai.',
+                ]
+            }
+        ]
     },
     {
         id : "qris",
